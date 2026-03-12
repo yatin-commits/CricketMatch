@@ -1,0 +1,564 @@
+{
+  "info": {
+    "_postman_id": "e7f5263b-e50c-4a16-add0-6f999a220953",
+    "name": "DATA SEEDER & API ENDPOINTS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37747749"
+  },
+  "item": [
+    {
+      "name": "🌱 Data Seeder (Run in Order)",
+      "item": [
+        {
+          "name": "1. Add Match - Mumbai (2026-04-01)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2026-04-01\",\n  \"cityName\": \"Mumbai\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2. Add Match - Delhi (2026-04-05)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2026-04-05\",\n  \"cityName\": \"Delhi\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Add Match - Chennai (2026-04-10)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2026-04-10\",\n  \"cityName\": \"Chennai\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Add Match - Kolkata (2026-04-15)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2026-04-15\",\n  \"cityName\": \"Kolkata\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Add Match - Bangalore (2026-04-20)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2026-04-20\",\n  \"cityName\": \"Bangalore\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Book 3 Tickets - Mumbai (2026-04-01)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2026-04-01\",\n  \"audienceList\": [\n    { \"name\": \"Rahul Sharma\", \"gender\": \"M\", \"age\": 25 },\n    { \"name\": \"Priya Patel\", \"gender\": \"F\", \"age\": 22 },\n    { \"name\": \"Amit Singh\", \"gender\": \"M\", \"age\": 30 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. Book 2 More Tickets - Mumbai (2026-04-01)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2026-04-01\",\n  \"audienceList\": [\n    { \"name\": \"Sneha Iyer\", \"gender\": \"F\", \"age\": 28 },\n    { \"name\": \"Rohan Mehta\", \"gender\": \"M\", \"age\": 35 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "8. Book 4 Tickets - Delhi (2026-04-05)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2026-04-05\",\n  \"audienceList\": [\n    { \"name\": \"Ankit Verma\", \"gender\": \"M\", \"age\": 21 },\n    { \"name\": \"Kavya Nair\", \"gender\": \"F\", \"age\": 24 },\n    { \"name\": \"Vikram Joshi\", \"gender\": \"M\", \"age\": 32 },\n    { \"name\": \"Meera Rao\", \"gender\": \"F\", \"age\": 27 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "9. Book 2 Tickets - Chennai (2026-04-10)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2026-04-10\",\n  \"audienceList\": [\n    { \"name\": \"Arjun Kumar\", \"gender\": \"M\", \"age\": 29 },\n    { \"name\": \"Divya Menon\", \"gender\": \"F\", \"age\": 23 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "Add New Match",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2025-06-10\",\n  \"cityName\": \"Mumbai\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Match - Missing Fields (Validation Test)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"\",\n  \"cityName\": \"\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Match - Duplicate Date Test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateOfMatch\": \"2025-06-10\",\n  \"cityName\": \"Delhi\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/admin/match",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "match"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "View Audience by Match Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/admin/audience?matchDate=2025-06-10",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "audience"
+              ],
+              "query": [
+                {
+                  "key": "matchDate",
+                  "value": "2025-06-10"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "View Seat Status by Match Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/admin/seatStatus?matchDate=2025-06-10",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "seatStatus"
+              ],
+              "query": [
+                {
+                  "key": "matchDate",
+                  "value": "2025-06-10"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "View Seat Status - No Match Found Test",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/admin/seatStatus?matchDate=1999-01-01",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "admin",
+                "seatStatus"
+              ],
+              "query": [
+                {
+                  "key": "matchDate",
+                  "value": "1999-01-01"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Audience",
+      "item": [
+        {
+          "name": "Get Upcoming Matches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/audience/matches",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "matches"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Book Ticket",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2025-06-10\",\n  \"audienceList\": [\n    { \"name\": \"Rahul\", \"gender\": \"M\", \"age\": 25 },\n    { \"name\": \"Priya\", \"gender\": \"F\", \"age\": 22 },\n    { \"name\": \"Amit\",  \"gender\": \"M\", \"age\": 30 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Book Ticket - Missing Fields (Validation Test)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2025-06-10\",\n  \"audienceList\": [\n    { \"name\": \"\", \"gender\": null, \"age\": null }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Book Ticket - Stadium Full Test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"matchDate\": \"2025-06-10\",\n  \"audienceList\": [\n    { \"name\": \"A1\", \"gender\": \"M\", \"age\": 20 },\n    { \"name\": \"A2\", \"gender\": \"M\", \"age\": 21 },\n    { \"name\": \"A3\", \"gender\": \"M\", \"age\": 22 },\n    { \"name\": \"A4\", \"gender\": \"M\", \"age\": 23 },\n    { \"name\": \"A5\", \"gender\": \"M\", \"age\": 24 },\n    { \"name\": \"A6\", \"gender\": \"M\", \"age\": 25 },\n    { \"name\": \"A7\", \"gender\": \"M\", \"age\": 26 },\n    { \"name\": \"A8\", \"gender\": \"M\", \"age\": 27 },\n    { \"name\": \"A9\", \"gender\": \"M\", \"age\": 28 },\n    { \"name\": \"A10\", \"gender\": \"M\", \"age\": 29 },\n    { \"name\": \"A11\", \"gender\": \"M\", \"age\": 30 },\n    { \"name\": \"A12\", \"gender\": \"M\", \"age\": 31 },\n    { \"name\": \"A13\", \"gender\": \"M\", \"age\": 32 },\n    { \"name\": \"A14\", \"gender\": \"M\", \"age\": 33 },\n    { \"name\": \"A15\", \"gender\": \"M\", \"age\": 34 },\n    { \"name\": \"A16\", \"gender\": \"M\", \"age\": 35 },\n    { \"name\": \"A17\", \"gender\": \"M\", \"age\": 36 },\n    { \"name\": \"A18\", \"gender\": \"M\", \"age\": 37 },\n    { \"name\": \"A19\", \"gender\": \"M\", \"age\": 38 },\n    { \"name\": \"A20\", \"gender\": \"M\", \"age\": 39 },\n    { \"name\": \"A21\", \"gender\": \"M\", \"age\": 40 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/audience/book",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Booking Status by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/audience/booking/3",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "booking",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Booking Status - Invalid ID Test",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/audience/booking/999",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "audience",
+                "booking",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8090"
+    }
+  ]
+}
