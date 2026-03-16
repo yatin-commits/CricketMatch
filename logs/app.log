@@ -6363,3 +6363,218 @@ Caused by: java.lang.ClassNotFoundException: NoMatchOnThatDate
 2026-03-12 15:21:45 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-12 15:21:45 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-03-12 15:21:45 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-12 15:44:11 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-12 15:44:11 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-12 15:44:11 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-12 15:44:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:44:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-126 - Shutdown initiated...
+2026-03-12 15:44:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-126 - Shutdown completed.
+2026-03-12 15:44:11 INFO  c.d.app.CricketmatchYatinApplication - Starting CricketmatchYatinApplication using Java 25.0.1 with PID 26268 (C:\Spring\cricketmatch_Yatin\target\classes started by ysharma in C:\Spring\cricketmatch_Yatin)
+2026-03-12 15:44:11 INFO  c.d.app.CricketmatchYatinApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-12 15:44:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12 15:44:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2026-03-12 15:44:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2026-03-12 15:44:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-12 15:44:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-12 15:44:12 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-12 15:44:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 423 ms
+2026-03-12 15:44:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12 15:44:12 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-12 15:44:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12 15:44:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-127 - Starting...
+2026-03-12 15:44:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-127 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d4e527a
+2026-03-12 15:44:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-127 - Start completed.
+2026-03-12 15:44:12 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-127)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-12 15:44:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12 15:44:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:44:12 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myCommonExceptionHandler': Lookup method resolution failed
+2026-03-12 15:44:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:44:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-127 - Shutdown initiated...
+2026-03-12 15:44:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-127 - Shutdown completed.
+2026-03-12 15:44:12 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-12 15:44:12 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-12 15:44:12 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myCommonExceptionHandler': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991) ~[spring-context-6.2.16.jar:6.2.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.16.jar:6.2.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.11.jar:3.5.11]
+	at com.ds.app.CricketmatchYatinApplication.main(CricketmatchYatinApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.11.jar:3.5.11]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.ds.app.exceptions.MyCommonExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5285e993]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.16.jar:6.2.16]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.16.jar:6.2.16]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: RequiredFieldException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.16.jar:6.2.16]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: RequiredFieldException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:547) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.5.11.jar:3.5.11]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 30 common frames omitted
+2026-03-12 15:44:23 INFO  c.d.app.CricketmatchYatinApplication - Starting CricketmatchYatinApplication using Java 25.0.1 with PID 26268 (C:\Spring\cricketmatch_Yatin\target\classes started by ysharma in C:\Spring\cricketmatch_Yatin)
+2026-03-12 15:44:23 INFO  c.d.app.CricketmatchYatinApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-12 15:44:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12 15:44:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2026-03-12 15:44:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2026-03-12 15:44:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-12 15:44:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-12 15:44:23 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-12 15:44:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 450 ms
+2026-03-12 15:44:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12 15:44:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-12 15:44:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12 15:44:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-128 - Starting...
+2026-03-12 15:44:23 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-128 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1328280e
+2026-03-12 15:44:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-128 - Start completed.
+2026-03-12 15:44:23 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-128)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-12 15:44:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12 15:44:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:44:24 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12 15:44:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-12 15:44:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2026-03-12 15:44:24 INFO  c.d.app.CricketmatchYatinApplication - Started CricketmatchYatinApplication in 0.956 seconds (process running for 10255.472)
+2026-03-12 15:44:24 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-12 15:44:44 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12 15:44:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-12 15:44:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-12 15:44:44 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ds.app.entities.CricketMatch> com.ds.app.controller.AdminController.addMatch(com.ds.app.dto.request.MatchRequestDTO) throws com.ds.app.exceptions.MatchAlreadyExistException with 2 errors: [Field error in object 'matchRequestDTO' on field 'dateOfMatch': rejected value []; codes [NotBlank.matchRequestDTO.dateOfMatch,NotBlank.dateOfMatch,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.dateOfMatch,dateOfMatch]; arguments []; default message [dateOfMatch]]; default message [dateOfMatch is Required]] [Field error in object 'matchRequestDTO' on field 'cityName': rejected value []; codes [NotBlank.matchRequestDTO.cityName,NotBlank.cityName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.cityName,cityName]; arguments []; default message [cityName]]; default message [cityName is Required]] ]
+2026-03-12 15:45:32 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-12 15:45:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-12 15:45:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-12 15:45:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:45:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-128 - Shutdown initiated...
+2026-03-12 15:45:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-128 - Shutdown completed.
+2026-03-12 15:45:33 INFO  c.d.app.CricketmatchYatinApplication - Starting CricketmatchYatinApplication using Java 25.0.1 with PID 26268 (C:\Spring\cricketmatch_Yatin\target\classes started by ysharma in C:\Spring\cricketmatch_Yatin)
+2026-03-12 15:45:33 INFO  c.d.app.CricketmatchYatinApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-12 15:45:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12 15:45:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2026-03-12 15:45:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2026-03-12 15:45:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-12 15:45:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-12 15:45:33 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-12 15:45:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 425 ms
+2026-03-12 15:45:33 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12 15:45:33 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-12 15:45:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12 15:45:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-129 - Starting...
+2026-03-12 15:45:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-129 - Added connection com.mysql.cj.jdbc.ConnectionImpl@83ba950
+2026-03-12 15:45:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-129 - Start completed.
+2026-03-12 15:45:33 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-129)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-12 15:45:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12 15:45:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 15:45:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12 15:45:33 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-12 15:45:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2026-03-12 15:45:33 INFO  c.d.app.CricketmatchYatinApplication - Started CricketmatchYatinApplication in 0.828 seconds (process running for 10325.158)
+2026-03-12 15:45:33 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-12 15:49:02 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12 15:49:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-12 15:49:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-12 15:49:02 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ds.app.entities.CricketMatch> com.ds.app.controller.AdminController.addMatch(com.ds.app.dto.request.MatchRequestDTO) throws com.ds.app.exceptions.MatchAlreadyExistException with 2 errors: [Field error in object 'matchRequestDTO' on field 'dateOfMatch': rejected value []; codes [NotBlank.matchRequestDTO.dateOfMatch,NotBlank.dateOfMatch,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.dateOfMatch,dateOfMatch]; arguments []; default message [dateOfMatch]]; default message [dateOfMatch is Required]] [Field error in object 'matchRequestDTO' on field 'cityName': rejected value []; codes [NotBlank.matchRequestDTO.cityName,NotBlank.cityName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.cityName,cityName]; arguments []; default message [cityName]]; default message [cityName is Required]] ]
+2026-03-12 15:57:53 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.ds.app.controller.AudienceController.bookTicket(com.ds.app.dto.request.BookingRequestDTO) throws com.ds.app.exceptions.StadiumFullException,com.ds.app.exceptions.NotEnoughSpaceException,com.ds.app.exceptions.NoMatchOnThatDate: [Field error in object 'bookingRequestDTO' on field 'audienceList[0].age': rejected value [0]; codes [Min.bookingRequestDTO.audienceList[0].age,Min.bookingRequestDTO.audienceList.age,Min.audienceList[0].age,Min.audienceList.age,Min.age,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].age,audienceList[0].age]; arguments []; default message [audienceList[0].age],1]; default message [Age Cannot be less than 1]] ]
+2026-03-12 16:06:07 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.NotEnoughSpaceException: Only 19 seats remaining.]
+2026-03-12 16:06:24 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.StadiumFullException: Stadium is full! No seats available.]
+2026-03-12 16:09:43 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.NoMatchOnThatDate: No match found on date: 1999-01-01]
+2026-03-12 16:14:40 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.NoMatchOnThatDate: No match found on date: 1999-01-01]
+2026-03-12 16:14:55 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.StadiumFullException: Stadium is full! No seats available.]
+2026-03-12 16:15:02 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.ds.app.controller.AudienceController.bookTicket(com.ds.app.dto.request.BookingRequestDTO) throws com.ds.app.exceptions.StadiumFullException,com.ds.app.exceptions.NotEnoughSpaceException,com.ds.app.exceptions.NoMatchOnThatDate with 3 errors: [Field error in object 'bookingRequestDTO' on field 'audienceList[0].age': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].age,NotNull.bookingRequestDTO.audienceList.age,NotNull.audienceList[0].age,NotNull.audienceList.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].age,audienceList[0].age]; arguments []; default message [audienceList[0].age]]; default message [Age Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].name': rejected value []; codes [NotBlank.bookingRequestDTO.audienceList[0].name,NotBlank.bookingRequestDTO.audienceList.name,NotBlank.audienceList[0].name,NotBlank.audienceList.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].name,audienceList[0].name]; arguments []; default message [audienceList[0].name]]; default message [Name Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].gender': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].gender,NotNull.bookingRequestDTO.audienceList.gender,NotNull.audienceList[0].gender,NotNull.audienceList.gender,NotNull.gender,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].gender,audienceList[0].gender]; arguments []; default message [audienceList[0].gender]]; default message [Gender Is Required]] ]
+2026-03-12 16:15:09 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.StadiumFullException: Stadium is full! No seats available.]
+2026-03-12 16:15:44 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.BookingIdNotFoundException: No booking found for ID: 999]
+2026-03-12 16:15:57 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.MatchAlreadyExistException: Match already exists for this date: 2025-06-10]
+2026-03-12 16:16:54 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ds.app.entities.CricketMatch> com.ds.app.controller.AdminController.addMatch(com.ds.app.dto.request.MatchRequestDTO) throws com.ds.app.exceptions.MatchAlreadyExistException with 2 errors: [Field error in object 'matchRequestDTO' on field 'cityName': rejected value []; codes [NotBlank.matchRequestDTO.cityName,NotBlank.cityName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.cityName,cityName]; arguments []; default message [cityName]]; default message [cityName is Required]] [Field error in object 'matchRequestDTO' on field 'dateOfMatch': rejected value []; codes [NotBlank.matchRequestDTO.dateOfMatch,NotBlank.dateOfMatch,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [matchRequestDTO.dateOfMatch,dateOfMatch]; arguments []; default message [dateOfMatch]]; default message [dateOfMatch is Required]] ]
+2026-03-12 16:17:07 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.ds.app.controller.AudienceController.bookTicket(com.ds.app.dto.request.BookingRequestDTO) throws com.ds.app.exceptions.StadiumFullException,com.ds.app.exceptions.NotEnoughSpaceException,com.ds.app.exceptions.NoMatchOnThatDate with 3 errors: [Field error in object 'bookingRequestDTO' on field 'audienceList[0].gender': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].gender,NotNull.bookingRequestDTO.audienceList.gender,NotNull.audienceList[0].gender,NotNull.audienceList.gender,NotNull.gender,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].gender,audienceList[0].gender]; arguments []; default message [audienceList[0].gender]]; default message [Gender Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].age': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].age,NotNull.bookingRequestDTO.audienceList.age,NotNull.audienceList[0].age,NotNull.audienceList.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].age,audienceList[0].age]; arguments []; default message [audienceList[0].age]]; default message [Age Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].name': rejected value []; codes [NotBlank.bookingRequestDTO.audienceList[0].name,NotBlank.bookingRequestDTO.audienceList.name,NotBlank.audienceList[0].name,NotBlank.audienceList.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].name,audienceList[0].name]; arguments []; default message [audienceList[0].name]]; default message [Name Is Required]] ]
+2026-03-12 16:18:33 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-12 16:18:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-12 16:18:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-12 16:18:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 16:18:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-129 - Shutdown initiated...
+2026-03-12 16:18:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-129 - Shutdown completed.
+2026-03-12 16:18:33 INFO  c.d.app.CricketmatchYatinApplication - Starting CricketmatchYatinApplication using Java 25.0.1 with PID 26268 (C:\Spring\cricketmatch_Yatin\target\classes started by ysharma in C:\Spring\cricketmatch_Yatin)
+2026-03-12 16:18:33 INFO  c.d.app.CricketmatchYatinApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-12 16:18:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12 16:18:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-03-12 16:18:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2026-03-12 16:18:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-12 16:18:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-12 16:18:34 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-12 16:18:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 368 ms
+2026-03-12 16:18:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12 16:18:34 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-12 16:18:34 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12 16:18:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-130 - Starting...
+2026-03-12 16:18:34 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-130 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3382e339
+2026-03-12 16:18:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-130 - Start completed.
+2026-03-12 16:18:34 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-130)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-12 16:18:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12 16:18:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 16:18:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12 16:18:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-12 16:18:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2026-03-12 16:18:34 INFO  c.d.app.CricketmatchYatinApplication - Started CricketmatchYatinApplication in 0.714 seconds (process running for 12305.783)
+2026-03-12 16:18:34 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-12 16:28:33 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12 16:28:33 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-12 16:28:33 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-12 16:29:10 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.NoMatchOnThatDate: No match found on date: 1999-01-01]
+2026-03-12 16:29:45 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.StadiumFullException: Stadium is full! No seats available.]
+2026-03-12 16:29:54 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.ds.app.exceptions.NoMatchOnThatDate: No match found on date: 2025-06-19]
+2026-03-12 16:30:27 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.ds.app.controller.AudienceController.bookTicket(com.ds.app.dto.request.BookingRequestDTO) throws com.ds.app.exceptions.StadiumFullException,com.ds.app.exceptions.NotEnoughSpaceException,com.ds.app.exceptions.NoMatchOnThatDate with 3 errors: [Field error in object 'bookingRequestDTO' on field 'audienceList[0].gender': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].gender,NotNull.bookingRequestDTO.audienceList.gender,NotNull.audienceList[0].gender,NotNull.audienceList.gender,NotNull.gender,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].gender,audienceList[0].gender]; arguments []; default message [audienceList[0].gender]]; default message [Gender Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].age': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].age,NotNull.bookingRequestDTO.audienceList.age,NotNull.audienceList[0].age,NotNull.audienceList.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].age,audienceList[0].age]; arguments []; default message [audienceList[0].age]]; default message [Age Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].name': rejected value []; codes [NotBlank.bookingRequestDTO.audienceList[0].name,NotBlank.bookingRequestDTO.audienceList.name,NotBlank.audienceList[0].name,NotBlank.audienceList.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].name,audienceList[0].name]; arguments []; default message [audienceList[0].name]]; default message [Name Is Required]] ]
+2026-03-12 16:30:50 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.ds.app.controller.AudienceController.bookTicket(com.ds.app.dto.request.BookingRequestDTO) throws com.ds.app.exceptions.StadiumFullException,com.ds.app.exceptions.NotEnoughSpaceException,com.ds.app.exceptions.NoMatchOnThatDate with 2 errors: [Field error in object 'bookingRequestDTO' on field 'audienceList[0].age': rejected value [null]; codes [NotNull.bookingRequestDTO.audienceList[0].age,NotNull.bookingRequestDTO.audienceList.age,NotNull.audienceList[0].age,NotNull.audienceList.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].age,audienceList[0].age]; arguments []; default message [audienceList[0].age]]; default message [Age Is Required]] [Field error in object 'bookingRequestDTO' on field 'audienceList[0].name': rejected value []; codes [NotBlank.bookingRequestDTO.audienceList[0].name,NotBlank.bookingRequestDTO.audienceList.name,NotBlank.audienceList[0].name,NotBlank.audienceList.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequestDTO.audienceList[0].name,audienceList[0].name]; arguments []; default message [audienceList[0].name]]; default message [Name Is Required]] ]
